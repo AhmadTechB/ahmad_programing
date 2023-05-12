@@ -21,7 +21,8 @@ class CommonButton extends StatelessWidget {
           height: height ?? 70,
           width: 400,
           decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(7), color: Colors.blue),
+
+              borderRadius: BorderRadius.circular(7), color: Colors.red),
           child: Center(
             child: Text(
               "Clicked",
