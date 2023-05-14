@@ -1,5 +1,6 @@
 import 'package:ahmad_practices/forget_password_ui.dart';
 import 'package:ahmad_practices/login.dart';
+import 'package:ahmad_practices/signup_screen/onboarding_screen/screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home:CommonButton(),
+      home: SignUpScreen(),
 
     );
   }
