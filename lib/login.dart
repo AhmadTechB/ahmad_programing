@@ -35,12 +35,22 @@ class _GetApiCallState extends State<GetApiCall> {
       body: ListView.builder(
           itemCount: getApi?.length ?? 0,
           itemBuilder: (context, index) {
+            // final user = getApi?[index];
+            // final imageUrl = user['picture']['thumbnail'];
             if (getApi?.length == null) {
-              return CircularProgressIndicator();
+              return const CircularProgressIndicator();
             }
             return ListTile(
-              leading: CircleAvatar(child: Text('${index + 1}')),
-              title: Text(getApi?[index]['email'].toString() ?? ""),
+              leading:ClipRRect(
+              // CircleAvatar(
+              //     child: Text('${index + 1}')),
+                borderRadius: BorderRadius.circular(100),
+                child: Image.network(getApi?[index]['picture']['thumbnail'].toString() ?? ""),
+              ),
+              title: Text(
+                  getApi?[index]['name']['first'].toString() ?? ""),
+              subtitle: Text(
+                  getApi?[index]['email'].toString() ?? ""),
             );
           }),
       // body: Center(
@@ -96,3 +106,4 @@ class _GetApiCallState extends State<GetApiCall> {
     print("fetchUsers completed");
   }
 }
+
