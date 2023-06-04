@@ -27,6 +27,7 @@ class _GetApiCallState extends State<GetApiCall> {
         backgroundColor: Colors.purple,
       ),
       floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.purple,
         onPressed: () {
           fetchUsers();
           // _increament();
@@ -94,7 +95,7 @@ class _GetApiCallState extends State<GetApiCall> {
   Future<void> fetchUsers() async {
     print("fetchUsers data");
     final response =
-        await http.get(Uri.parse("https://randomuser.me/api/?results=200"));
+        await http.get(Uri.parse("https://randomuser.me/api/?results=500"));
     if (response.statusCode == 200) {
       var jsonD = jsonDecode(response.body);
       setState(() {

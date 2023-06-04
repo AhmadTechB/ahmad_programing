@@ -1,6 +1,4 @@
-import 'package:ahmad_practices/forget_password_ui.dart';
-import 'package:ahmad_practices/login.dart';
-import 'package:ahmad_practices/signup_screen/onboarding_screen/screen.dart';
+import 'package:ahmad_practices/crud_api/screen/todo_list.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,13 +11,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner:false,
+      debugShowCheckedModeBanner: false,
       title: 'Welcome to Flutter',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: GetApiCall(),
-
+      theme: ThemeData.dark(),
+      home: TodoListPage(),
     );
   }
 }
