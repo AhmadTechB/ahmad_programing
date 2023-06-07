@@ -4,18 +4,32 @@ import 'package:flutter/material.dart';
 import '../app_color/app_color.dart';
 
 class AppTextStyle {
-  static TextStyle text34DarkBlue1237W700 = TextStyle(
+  static TextStyle text34DarkBlue1237W500 = TextStyle(
     color: AppColor.darkBlue1237,
-    fontWeight: FontWeight.w700,
+    fontWeight: FontWeight.w500,
     fontSize: 34 * SizeConfig.textMultiplier!,
+    // fontFamily: 'Circular',
+  );
+
+  static TextStyle text15Blue33DBW500 = TextStyle(
+    color: AppColor.blue50DB,
+    fontWeight: FontWeight.w500,
+    fontSize: 15 * SizeConfig.textMultiplier!,
     // fontFamily: 'Circular',
   );
 
 
   static TextStyle text17Black313CW500 = TextStyle(
     color: AppColor.blackText313C,
-    fontWeight: FontWeight.w700,
-    fontSize: 34/2 * SizeConfig.textMultiplier!,
+    fontWeight: FontWeight.w500,
+    fontSize: 17 * SizeConfig.textMultiplier!,
+    // fontFamily: 'Circular',
+  );
+
+  static TextStyle text20Black313CW500 = TextStyle(
+    color: AppColor.blackText313C,
+    fontWeight: FontWeight.w500,
+    fontSize: 20 * SizeConfig.textMultiplier!,
     // fontFamily: 'Circular',
   );
 

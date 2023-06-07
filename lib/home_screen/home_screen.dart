@@ -70,7 +70,6 @@ class _HomeScreenState extends State<HomeScreen> {
           //     ),
           //   ),
           // ),
-
           Container(
             margin: EdgeInsets.only(
                 left: 16 * SizeConfig.widthMultiplier!,
@@ -108,7 +107,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       SizedBox(height: 3 * SizeConfig.heightMultiplier!),
                       Text(
                         "\$0.00",
-                        style: AppTextStyle.text34DarkBlue1237W700,
+                        style: AppTextStyle.text34DarkBlue1237W500,
                       ),
                     ],
                   ),
@@ -146,23 +145,28 @@ class _HomeScreenState extends State<HomeScreen> {
               borderRadius:
                   BorderRadius.circular(5 * SizeConfig.widthMultiplier!),
               border: Border.all(
-                color: AppColor.whiteBackFFFF,
+                color: AppColor.whiteBackE8F0,
               ),
             ),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                Text(
-                  "Start generating interest on\n your assets",
-                  style: AppTextStyle.text17Black313CW500,
-                  textAlign: TextAlign.center,
-                ),
-                SizedBox(
-                  height: 17 * SizeConfig.heightMultiplier!,
-                ),
-                BlueButton(),
-              ],
+            child: Padding(
+              padding: EdgeInsets.only(
+                  top: 29 * SizeConfig.heightMultiplier!,
+                  bottom: 20 * SizeConfig.heightMultiplier!),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Text(
+                    "Start generating interest on\n your assets",
+                    style: AppTextStyle.text17Black313CW500,
+                    textAlign: TextAlign.center,
+                  ),
+                  SizedBox(
+                    height: 17 * SizeConfig.heightMultiplier!,
+                  ),
+                  BlueButton(),
+                ],
+              ),
             ),
           ),
           SizedBox(
@@ -174,86 +178,136 @@ class _HomeScreenState extends State<HomeScreen> {
               scrollDirection: Axis.horizontal,
               children: [
                 Container(
+                  /// I have to remove this height and width.
                   width: 272 * SizeConfig.widthMultiplier!,
                   height: 143 * SizeConfig.heightMultiplier!,
                   margin: EdgeInsets.only(
                       left: 16 * SizeConfig.widthMultiplier!,
                       right: 16 * SizeConfig.widthMultiplier!),
                   decoration: BoxDecoration(
-                    color: Color(0xffEFF2F6),
+                    color: AppColor.greyBackF2F6,
                     borderRadius:
                         BorderRadius.circular(5 * SizeConfig.widthMultiplier!),
                     border: Border.all(
-                      color: Color(0xffEFF2F6),
+                      color: AppColor.greyBackF2F6,
                     ),
                   ),
                   child: Row(
                     children: [
-                      Expanded(
-                        child: Container(
-                          color: Colors.greenAccent,
-                          child: Column(
-                            children: [
-                              ImageLoader.svgImageAsset(
-                                  imagePath: ImagePath.arrowLeftIcon),
-                              ImageLoader.svgImageAsset(
-                                  imagePath: ImagePath.arrowLeftIcon),
-                            ],
-                          ),
+                      Padding(
+                        padding: EdgeInsets.only(
+                          top: 25 * SizeConfig.widthMultiplier!,
+                          left: 17 * SizeConfig.widthMultiplier!,
+                        ),
+                        child: Column(
+                          children: [
+                            Text(
+                              "Cashaa Mobile\nApp Launch",
+                              style: AppTextStyle.text17Black313CW500,
+                            ),
+                            SizedBox(
+                              height: 6 * SizeConfig.heightMultiplier!,
+                            ),
+                            Text(
+                              "Introductory Offer",
+                              style: AppTextStyle.textLiteGrey8096W400,
+                              textAlign: TextAlign.center,
+                            ),
+                            SizedBox(
+                              height: 7 * SizeConfig.heightMultiplier!,
+                            ),
+                            Row(
+                              children: [
+                                Text(
+                                  "Learn More",
+                                  style: AppTextStyle.text15Blue33DBW500,
+                                ),
+                                SizedBox(
+                                  width: 5 * SizeConfig.widthMultiplier!,
+                                ),
+                                ImageLoader.svgImageAsset(
+                                    imagePath: ImagePath.rightGoIcon)
+                              ],
+                            ),
+                          ],
                         ),
                       ),
-                      Expanded(
-                        child: Container(
-                          color: Colors.blue,
-                          child: ImageLoader.svgImageAsset(
-                              imagePath: ImagePath.arrowLeftIcon),
-                        ),
-                      )
+                      SizedBox(
+                        width: 64 * SizeConfig.widthMultiplier!,
+                      ),
+                      ImageLoader.svgImageAsset(
+                          imagePath: ImagePath.starSheildIcon)
                     ],
                   ),
                 ),
                 Container(
-                  width: 172 * SizeConfig.widthMultiplier!,
-                  height: 143,
                   margin: EdgeInsets.only(
                       left: 16 * SizeConfig.widthMultiplier!,
                       right: 16 * SizeConfig.widthMultiplier!),
                   decoration: BoxDecoration(
-                    color: Color(0xffEFF2F6),
+                    color: AppColor.greyBackF2F6,
                     borderRadius:
                         BorderRadius.circular(5 * SizeConfig.widthMultiplier!),
                     border: Border.all(
-                      color: Color(0xffEFF2F6),
+                      color: AppColor.greyBackF2F6,
                     ),
                   ),
                   child: Row(
                     children: [
-                      Expanded(
-                        child: Container(
-                          color: Colors.greenAccent,
-                          child: Column(
-                            children: [
-                              ImageLoader.svgImageAsset(
-                                  imagePath: ImagePath.arrowLeftIcon),
-                              ImageLoader.svgImageAsset(
-                                  imagePath: ImagePath.arrowLeftIcon),
-                            ],
-                          ),
+                      Padding(
+                        padding: EdgeInsets.only(
+                          top: 25 * SizeConfig.widthMultiplier!,
+                          left: 17 * SizeConfig.widthMultiplier!,
+                        ),
+                        child: Column(
+                          children: [
+                            Text(
+                              "Cashaa Mobile\nApp Launch",
+                              style: AppTextStyle.text17Black313CW500,
+                            ),
+                            SizedBox(
+                              height: 6 * SizeConfig.heightMultiplier!,
+                            ),
+                            Text(
+                              "Introductory Offer",
+                              style: AppTextStyle.textLiteGrey8096W400,
+                            ),
+                            SizedBox(
+                              height: 7 * SizeConfig.heightMultiplier!,
+                            ),
+                            Row(
+                              children: [
+                                Text(
+                                  "Learn More",
+                                  style: AppTextStyle.text15Blue33DBW500,
+                                ),
+                                SizedBox(
+                                  width: 5 * SizeConfig.widthMultiplier!,
+                                ),
+                                ImageLoader.svgImageAsset(
+                                    imagePath: ImagePath.rightGoIcon)
+                              ],
+                            ),
+                          ],
                         ),
                       ),
-                      Expanded(
-                        child: Container(
-                          color: Colors.blue,
-                          child: ImageLoader.svgImageAsset(
-                              imagePath: ImagePath.arrowLeftIcon),
-                        ),
-                      )
                     ],
                   ),
                 ),
               ],
             ),
           ),
+          const Spacer(),
+      Row(
+        children: [
+          Text("Community",
+          style: AppTextStyle.text20Black313CW500,
+          ),
+          SizedBox(
+            width: 145 * SizeConfig.widthMultiplier!,
+          ),
+        ],
+      ),
         ],
       ),
     );
