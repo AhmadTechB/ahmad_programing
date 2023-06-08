@@ -10,6 +10,12 @@ class AppTextStyle {
     fontSize: 34 * SizeConfig.textMultiplier!,
     // fontFamily: 'Circular',
   );
+  static TextStyle text16DarkBlue1237W700 = TextStyle(
+    color: AppColor.darkBlue1237,
+    fontWeight: FontWeight.w700,
+    fontSize: 16 * SizeConfig.textMultiplier!,
+    // fontFamily: 'Circular',
+  );
 
   static TextStyle text15Blue33DBW500 = TextStyle(
     color: AppColor.blue50DB,
@@ -26,6 +32,13 @@ class AppTextStyle {
     // fontFamily: 'Circular',
   );
 
+  static TextStyle text18BWhiteF9FFFFCW700 = TextStyle(
+    color: AppColor.whiteTextColorF9FFFF,
+    fontWeight: FontWeight.w700,
+    fontSize: 18 * SizeConfig.textMultiplier!,
+    // fontFamily: 'Circular',
+  );
+
   static TextStyle text20Black313CW500 = TextStyle(
     color: AppColor.blackText313C,
     fontWeight: FontWeight.w500,
@@ -33,19 +46,34 @@ class AppTextStyle {
     // fontFamily: 'Circular',
   );
 
-  static TextStyle textLiteGrey8096W400 = TextStyle(
+  static TextStyle text16LiteGrey8096W400 = TextStyle(
     color: AppColor.grey8096,
     fontWeight: FontWeight.w400,
     fontSize: 16 * SizeConfig.textMultiplier!,
     // fontFamily: 'Circular',
   );
+  static TextStyle text13LiteGrey8096W400 = TextStyle(
+    color: AppColor.grey8096,
+    fontWeight: FontWeight.w400,
+    fontSize: 13 * SizeConfig.textMultiplier!,
+    // fontFamily: 'Circular',
+  );
 
-// static TextStyle text20WhiteFFFW400 = TextStyle(
-//   color: AppColors.whiteFF,
-//   fontWeight: FontWeight.w400,
-//   fontSize: 20 * SizeConfig.textMultiplier!,
-//   fontFamily: 'Circular',
-// );
+  static TextStyle text17LiteGrey8096W400 = TextStyle(
+    color: AppColor.grey8096,
+    fontWeight: FontWeight.w400,
+    fontSize: 17 * SizeConfig.textMultiplier!,
+      decoration: TextDecoration.underline
+
+    // fontFamily: 'Circular',
+  );
+
+static TextStyle text20WhiteFFFW700 = TextStyle(
+  color: AppColor.kWhite,
+  fontWeight: FontWeight.w700,
+  fontSize: 20 * SizeConfig.textMultiplier!,
+  fontFamily: 'Circular',
+);
 //
 // static TextStyle? text18blue1E4DW700 = TextStyle(
 //   color: AppColors.blue1E4D,

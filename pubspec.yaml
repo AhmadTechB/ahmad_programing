@@ -38,6 +38,8 @@ dependencies:
   flutter_svg: ^2.0.5
   http: ^1.0.0
   flutter_screenutil:
+  loading_animation_widget: ^1.2.0+3
+  lottie: ^2.3.2
 
 dev_dependencies:
   flutter_test:

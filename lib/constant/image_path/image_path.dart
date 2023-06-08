@@ -9,4 +9,10 @@ class ImagePath{
   static const String starSheildIcon = "assets/common/star_sheild_icon.svg";
   static const String loaderIcon = "assets/onboarding/loader_with_animation.gif";
   static const String rightGoIcon = "assets/common/right_icon.svg";
+  static const String offerIcon = "assets/onboarding/offer_icon.png";
+  static const String loadingAnimation = "assets/onboarding/loader_with_animation.gif";
+  static const String arrowDownLeftIcon = "assets/onboarding/arrow_down_left.svg";
+  static const String seeMoreIcon = "assets/onboarding/see_more_icon.svg";
+  static const String cashaaInsightIcon = "assets/onboarding/cashaa_insight_icon.png";
+
 }

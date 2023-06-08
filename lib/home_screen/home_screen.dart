@@ -18,58 +18,14 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+      ),
       body: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
-        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           SizedBox(
-            height: 150 * SizeConfig.heightMultiplier!,
+            height: 26 * SizeConfig.heightMultiplier!,
           ),
-          // Padding(
-          //   padding: EdgeInsets.only(
-          //       left: 16 * SizeConfig.widthMultiplier!,
-          //       right: 16 * SizeConfig.widthMultiplier!),
-          //   child: Container(
-          //     width: 328 * SizeConfig.widthMultiplier!,
-          //     height: 116 * SizeConfig.heightMultiplier!,
-          //     decoration: BoxDecoration(
-          //       borderRadius:
-          //           BorderRadius.circular(5 * SizeConfig.widthMultiplier!),
-          //       border: Border.all(
-          //         width: 3 * SizeConfig.widthMultiplier!,
-          //         color: AppColor.greyBackFAFB,
-          //       ),
-          //     ),
-          //     child: Padding(
-          //       padding: EdgeInsets.only(
-          //           left: 17 * SizeConfig.widthMultiplier!,
-          //           top: 24 * SizeConfig.widthMultiplier!),
-          //       child: Column(
-          //         mainAxisAlignment: MainAxisAlignment.start,
-          //         crossAxisAlignment: CrossAxisAlignment.start,
-          //         children: [
-          //           Row(
-          //             mainAxisAlignment: MainAxisAlignment.start,
-          //             crossAxisAlignment: CrossAxisAlignment.start,
-          //             children: [
-          //               Text("Portfolio Balance",
-          //                   style: AppTextStyle.textLiteGrey8096W400),
-          //               SizedBox(width: 5 * SizeConfig.widthMultiplier!),
-          //               ImageLoader.svgImageAsset(
-          //                   imagePath: ImagePath.eyeSlashIcon),
-          //               SizedBox(width: 90 * SizeConfig.widthMultiplier!),
-          //               ImageLoader.svgImageAsset(
-          //                   imagePath: ImagePath.starSheildIcon),
-          //             ],
-          //           ),
-          //           Text("\$0.00",
-          //             style: AppTextStyle.text34DarkBlue1237W700,
-          //           ),
-          //         ],
-          //       ),
-          //     ),
-          //   ),
-          // ),
           Container(
             margin: EdgeInsets.only(
                 left: 16 * SizeConfig.widthMultiplier!,
@@ -97,7 +53,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         children: [
                           Text(
                             "Portfolio Balance",
-                            style: AppTextStyle.textLiteGrey8096W400,
+                            style: AppTextStyle.text16LiteGrey8096W400,
                           ),
                           SizedBox(width: 5 * SizeConfig.widthMultiplier!),
                           ImageLoader.svgImageAsset(
@@ -125,7 +81,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       SizedBox(height: 3 * SizeConfig.heightMultiplier!),
                       Text(
                         "SIlver",
-                        style: AppTextStyle.textLiteGrey8096W400,
+                        style: AppTextStyle.text16LiteGrey8096W400,
                       ),
                     ],
                   ),
@@ -164,7 +120,10 @@ class _HomeScreenState extends State<HomeScreen> {
                   SizedBox(
                     height: 17 * SizeConfig.heightMultiplier!,
                   ),
-                  BlueButton(),
+                  CommonButton(
+                    imagePath: ImagePath.arrowDownLeftIcon,
+                    title: "Fund your account",
+                  ),
                 ],
               ),
             ),
@@ -178,12 +137,11 @@ class _HomeScreenState extends State<HomeScreen> {
               scrollDirection: Axis.horizontal,
               children: [
                 Container(
-                  /// I have to remove this height and width.
-                  width: 272 * SizeConfig.widthMultiplier!,
-                  height: 143 * SizeConfig.heightMultiplier!,
                   margin: EdgeInsets.only(
                       left: 16 * SizeConfig.widthMultiplier!,
                       right: 16 * SizeConfig.widthMultiplier!),
+                  padding:
+                      EdgeInsets.only(left: 17 * SizeConfig.widthMultiplier!),
                   decoration: BoxDecoration(
                     color: AppColor.greyBackF2F6,
                     borderRadius:
@@ -196,10 +154,9 @@ class _HomeScreenState extends State<HomeScreen> {
                     children: [
                       Padding(
                         padding: EdgeInsets.only(
-                          top: 25 * SizeConfig.widthMultiplier!,
-                          left: 17 * SizeConfig.widthMultiplier!,
-                        ),
+                            top: 25 * SizeConfig.heightMultiplier!),
                         child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
                               "Cashaa Mobile\nApp Launch",
@@ -210,7 +167,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             ),
                             Text(
                               "Introductory Offer",
-                              style: AppTextStyle.textLiteGrey8096W400,
+                              style: AppTextStyle.text16LiteGrey8096W400,
                               textAlign: TextAlign.center,
                             ),
                             SizedBox(
@@ -232,11 +189,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           ],
                         ),
                       ),
-                      SizedBox(
-                        width: 64 * SizeConfig.widthMultiplier!,
-                      ),
-                      ImageLoader.svgImageAsset(
-                          imagePath: ImagePath.starSheildIcon)
+                      ImageLoader.imageAsset(imagePath: ImagePath.offerIcon)
                     ],
                   ),
                 ),
@@ -244,6 +197,8 @@ class _HomeScreenState extends State<HomeScreen> {
                   margin: EdgeInsets.only(
                       left: 16 * SizeConfig.widthMultiplier!,
                       right: 16 * SizeConfig.widthMultiplier!),
+                  padding:
+                      EdgeInsets.only(left: 17 * SizeConfig.widthMultiplier!),
                   decoration: BoxDecoration(
                     color: AppColor.greyBackF2F6,
                     borderRadius:
@@ -256,10 +211,9 @@ class _HomeScreenState extends State<HomeScreen> {
                     children: [
                       Padding(
                         padding: EdgeInsets.only(
-                          top: 25 * SizeConfig.widthMultiplier!,
-                          left: 17 * SizeConfig.widthMultiplier!,
-                        ),
+                            top: 25 * SizeConfig.heightMultiplier!),
                         child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
                               "Cashaa Mobile\nApp Launch",
@@ -270,7 +224,8 @@ class _HomeScreenState extends State<HomeScreen> {
                             ),
                             Text(
                               "Introductory Offer",
-                              style: AppTextStyle.textLiteGrey8096W400,
+                              style: AppTextStyle.text16LiteGrey8096W400,
+                              textAlign: TextAlign.center,
                             ),
                             SizedBox(
                               height: 7 * SizeConfig.heightMultiplier!,
@@ -291,23 +246,239 @@ class _HomeScreenState extends State<HomeScreen> {
                           ],
                         ),
                       ),
+                      ImageLoader.imageAsset(imagePath: ImagePath.offerIcon)
+                    ],
+                  ),
+                ),
+                Container(
+                  margin: EdgeInsets.only(
+                      left: 16 * SizeConfig.widthMultiplier!,
+                      right: 16 * SizeConfig.widthMultiplier!),
+                  padding:
+                      EdgeInsets.only(left: 17 * SizeConfig.widthMultiplier!),
+                  decoration: BoxDecoration(
+                    color: AppColor.greyBackF2F6,
+                    borderRadius:
+                        BorderRadius.circular(5 * SizeConfig.widthMultiplier!),
+                    border: Border.all(
+                      color: AppColor.greyBackF2F6,
+                    ),
+                  ),
+                  child: Row(
+                    children: [
+                      Padding(
+                        padding: EdgeInsets.only(
+                            top: 25 * SizeConfig.heightMultiplier!),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              "Cashaa Mobile\nApp Launch",
+                              style: AppTextStyle.text17Black313CW500,
+                            ),
+                            SizedBox(
+                              height: 6 * SizeConfig.heightMultiplier!,
+                            ),
+                            Text(
+                              "Introductory Offer",
+                              style: AppTextStyle.text16LiteGrey8096W400,
+                              textAlign: TextAlign.center,
+                            ),
+                            SizedBox(
+                              height: 7 * SizeConfig.heightMultiplier!,
+                            ),
+                            Row(
+                              children: [
+                                Text(
+                                  "Learn More",
+                                  style: AppTextStyle.text15Blue33DBW500,
+                                ),
+                                SizedBox(
+                                  width: 5 * SizeConfig.widthMultiplier!,
+                                ),
+                                ImageLoader.svgImageAsset(
+                                    imagePath: ImagePath.rightGoIcon)
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                      ImageLoader.imageAsset(imagePath: ImagePath.offerIcon)
+                    ],
+                  ),
+                ),
+                Container(
+                  margin: EdgeInsets.only(
+                      left: 16 * SizeConfig.widthMultiplier!,
+                      right: 16 * SizeConfig.widthMultiplier!),
+                  padding:
+                      EdgeInsets.only(left: 17 * SizeConfig.widthMultiplier!),
+                  decoration: BoxDecoration(
+                    color: AppColor.greyBackF2F6,
+                    borderRadius:
+                        BorderRadius.circular(5 * SizeConfig.widthMultiplier!),
+                    border: Border.all(
+                      color: AppColor.greyBackF2F6,
+                    ),
+                  ),
+                  child: Row(
+                    children: [
+                      Padding(
+                        padding: EdgeInsets.only(
+                            top: 25 * SizeConfig.heightMultiplier!),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              "Cashaa Mobile\nApp Launch",
+                              style: AppTextStyle.text17Black313CW500,
+                            ),
+                            SizedBox(
+                              height: 6 * SizeConfig.heightMultiplier!,
+                            ),
+                            Text(
+                              "Introductory Offer",
+                              style: AppTextStyle.text16LiteGrey8096W400,
+                              textAlign: TextAlign.center,
+                            ),
+                            SizedBox(
+                              height: 7 * SizeConfig.heightMultiplier!,
+                            ),
+                            Row(
+                              children: [
+                                Text(
+                                  "Learn More",
+                                  style: AppTextStyle.text15Blue33DBW500,
+                                ),
+                                SizedBox(
+                                  width: 5 * SizeConfig.widthMultiplier!,
+                                ),
+                                ImageLoader.svgImageAsset(
+                                    imagePath: ImagePath.rightGoIcon)
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                      ImageLoader.imageAsset(imagePath: ImagePath.offerIcon)
+                    ],
+                  ),
+                ),
+                Container(
+                  margin: EdgeInsets.only(
+                      left: 16 * SizeConfig.widthMultiplier!,
+                      right: 16 * SizeConfig.widthMultiplier!),
+                  padding:
+                      EdgeInsets.only(left: 17 * SizeConfig.widthMultiplier!),
+                  decoration: BoxDecoration(
+                    color: AppColor.greyBackF2F6,
+                    borderRadius:
+                        BorderRadius.circular(5 * SizeConfig.widthMultiplier!),
+                    border: Border.all(
+                      color: AppColor.greyBackF2F6,
+                    ),
+                  ),
+                  child: Row(
+                    children: [
+                      Padding(
+                        padding: EdgeInsets.only(
+                            top: 25 * SizeConfig.heightMultiplier!),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              "Cashaa Mobile\nApp Launch",
+                              style: AppTextStyle.text17Black313CW500,
+                            ),
+                            SizedBox(
+                              height: 6 * SizeConfig.heightMultiplier!,
+                            ),
+                            Text(
+                              "Introductory Offer",
+                              style: AppTextStyle.text16LiteGrey8096W400,
+                              textAlign: TextAlign.center,
+                            ),
+                            SizedBox(
+                              height: 7 * SizeConfig.heightMultiplier!,
+                            ),
+                            Row(
+                              children: [
+                                Text(
+                                  "Learn More",
+                                  style: AppTextStyle.text15Blue33DBW500,
+                                ),
+                                SizedBox(
+                                  width: 5 * SizeConfig.widthMultiplier!,
+                                ),
+                                ImageLoader.svgImageAsset(
+                                    imagePath: ImagePath.rightGoIcon)
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                      ImageLoader.imageAsset(imagePath: ImagePath.offerIcon)
                     ],
                   ),
                 ),
               ],
             ),
           ),
-          const Spacer(),
-      Row(
-        children: [
-          Text("Community",
-          style: AppTextStyle.text20Black313CW500,
-          ),
           SizedBox(
-            width: 145 * SizeConfig.widthMultiplier!,
+            height: 29 * SizeConfig.heightMultiplier!,
           ),
-        ],
-      ),
+          Padding(
+            padding: EdgeInsets.only(
+              left: 16 * SizeConfig.widthMultiplier!,
+              right: 16 * SizeConfig.widthMultiplier!,
+            ),
+            child: Row(
+              children: [
+                Text(
+                  "Community",
+                  style: AppTextStyle.text20Black313CW500,
+                ),
+                Spacer(),
+                Text(
+                  "See more",
+                  style: AppTextStyle.text17LiteGrey8096W400,
+                ),
+              ],
+            ),
+          ),
+          Padding(
+            padding: EdgeInsets.only(
+              left: 16 * SizeConfig.widthMultiplier!,
+              right: 16 * SizeConfig.widthMultiplier!,
+            ),
+            child: Row(
+              children: [
+                ImageLoader.imageAsset(
+                    imagePath: ImagePath.cashaaInsightIcon,
+                    width: 56 * SizeConfig.widthMultiplier!,
+                    height: 56 * SizeConfig.heightMultiplier!),
+                SizedBox(width: 12 * SizeConfig.widthMultiplier!),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      "Cashaa Insight #12",
+                      style: AppTextStyle.text16DarkBlue1237W700,
+                    ),
+                    SizedBox(
+                      height: 4 * SizeConfig.heightMultiplier!,
+                    ),
+                    Text(
+                      "The past year or two have been ...",
+                      style: AppTextStyle.text13LiteGrey8096W400,
+                    ),
+                  ],
+                ),
+                Spacer(),
+                ImageLoader.svgImageAsset(imagePath: ImagePath.seeMoreIcon),
+              ],
+            ),
+          )
         ],
       ),
     );
