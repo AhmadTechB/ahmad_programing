@@ -14,5 +14,6 @@ class ImagePath{
   static const String arrowDownLeftIcon = "assets/onboarding/arrow_down_left.svg";
   static const String seeMoreIcon = "assets/onboarding/see_more_icon.svg";
   static const String cashaaInsightIcon = "assets/onboarding/cashaa_insight_icon.png";
+  static const String usersIcon = "assets/common/user_icon.svg";
 
 }

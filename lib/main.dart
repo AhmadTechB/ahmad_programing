@@ -1,3 +1,4 @@
+import 'package:ahmad_practices/home_screen/kyc_status_verified.dart';
 import 'package:ahmad_practices/password_check.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -34,7 +35,7 @@ class MyApp extends StatelessWidget {
                     fontFamily: 'Avenir',
                     scaffoldBackgroundColor: Colors.white,
                   ),
-                  home: const HomeScreen(),
+                  home: const KycStatusVerified(),
                 );
               });
             });

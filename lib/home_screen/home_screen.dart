@@ -140,8 +140,6 @@ class _HomeScreenState extends State<HomeScreen> {
                   margin: EdgeInsets.only(
                       left: 16 * SizeConfig.widthMultiplier!,
                       right: 16 * SizeConfig.widthMultiplier!),
-                  padding:
-                      EdgeInsets.only(left: 17 * SizeConfig.widthMultiplier!),
                   decoration: BoxDecoration(
                     color: AppColor.greyBackF2F6,
                     borderRadius:
@@ -154,7 +152,9 @@ class _HomeScreenState extends State<HomeScreen> {
                     children: [
                       Padding(
                         padding: EdgeInsets.only(
-                            top: 25 * SizeConfig.heightMultiplier!),
+                            top: 25 * SizeConfig.heightMultiplier!,
+                        left: 17 * SizeConfig.widthMultiplier!,
+                        ),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
@@ -197,8 +197,6 @@ class _HomeScreenState extends State<HomeScreen> {
                   margin: EdgeInsets.only(
                       left: 16 * SizeConfig.widthMultiplier!,
                       right: 16 * SizeConfig.widthMultiplier!),
-                  padding:
-                      EdgeInsets.only(left: 17 * SizeConfig.widthMultiplier!),
                   decoration: BoxDecoration(
                     color: AppColor.greyBackF2F6,
                     borderRadius:
@@ -211,7 +209,9 @@ class _HomeScreenState extends State<HomeScreen> {
                     children: [
                       Padding(
                         padding: EdgeInsets.only(
-                            top: 25 * SizeConfig.heightMultiplier!),
+                            top: 25 * SizeConfig.heightMultiplier!,
+                            left: 17 * SizeConfig.widthMultiplier!,
+                        ),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
@@ -254,8 +254,6 @@ class _HomeScreenState extends State<HomeScreen> {
                   margin: EdgeInsets.only(
                       left: 16 * SizeConfig.widthMultiplier!,
                       right: 16 * SizeConfig.widthMultiplier!),
-                  padding:
-                      EdgeInsets.only(left: 17 * SizeConfig.widthMultiplier!),
                   decoration: BoxDecoration(
                     color: AppColor.greyBackF2F6,
                     borderRadius:
@@ -268,7 +266,9 @@ class _HomeScreenState extends State<HomeScreen> {
                     children: [
                       Padding(
                         padding: EdgeInsets.only(
-                            top: 25 * SizeConfig.heightMultiplier!),
+                            top: 25 * SizeConfig.heightMultiplier!,
+                            left: 17 * SizeConfig.widthMultiplier!,
+                        ),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
@@ -311,8 +311,6 @@ class _HomeScreenState extends State<HomeScreen> {
                   margin: EdgeInsets.only(
                       left: 16 * SizeConfig.widthMultiplier!,
                       right: 16 * SizeConfig.widthMultiplier!),
-                  padding:
-                      EdgeInsets.only(left: 17 * SizeConfig.widthMultiplier!),
                   decoration: BoxDecoration(
                     color: AppColor.greyBackF2F6,
                     borderRadius:
@@ -325,7 +323,8 @@ class _HomeScreenState extends State<HomeScreen> {
                     children: [
                       Padding(
                         padding: EdgeInsets.only(
-                            top: 25 * SizeConfig.heightMultiplier!),
+                            top: 25 * SizeConfig.heightMultiplier!,
+                            left: 17 * SizeConfig.widthMultiplier!),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
@@ -368,8 +367,6 @@ class _HomeScreenState extends State<HomeScreen> {
                   margin: EdgeInsets.only(
                       left: 16 * SizeConfig.widthMultiplier!,
                       right: 16 * SizeConfig.widthMultiplier!),
-                  padding:
-                      EdgeInsets.only(left: 17 * SizeConfig.widthMultiplier!),
                   decoration: BoxDecoration(
                     color: AppColor.greyBackF2F6,
                     borderRadius:
@@ -382,7 +379,8 @@ class _HomeScreenState extends State<HomeScreen> {
                     children: [
                       Padding(
                         padding: EdgeInsets.only(
-                            top: 25 * SizeConfig.heightMultiplier!),
+                            top: 25 * SizeConfig.heightMultiplier!,
+                            left: 17 * SizeConfig.widthMultiplier!),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
