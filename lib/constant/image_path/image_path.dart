@@ -15,5 +15,8 @@ class ImagePath{
   static const String seeMoreIcon = "assets/onboarding/see_more_icon.svg";
   static const String cashaaInsightIcon = "assets/onboarding/cashaa_insight_icon.png";
   static const String usersIcon = "assets/common/user_icon.svg";
-
+  static const String locationIcon = "assets/common/location_icon.svg";
+  static const String calenderIcon = "assets/common/calender_icon.svg";
+  static const String trueIcon = "assets/common/true_icon.svg";
+  static const String truesIcon = "assets/common/trues_icon.png";
 }

@@ -25,7 +25,7 @@ class _KycStatusVerifiedState extends State<KycStatusVerified> {
             height: 126 * SizeConfig.heightMultiplier!,
           ),
           Container(
-            width: 328* SizeConfig.widthMultiplier!,
+            width: 368* SizeConfig.widthMultiplier!,
             height: 136* SizeConfig.heightMultiplier!,
             margin: EdgeInsets.only(
                 left: 16 * SizeConfig.widthMultiplier!,
@@ -33,40 +33,71 @@ class _KycStatusVerifiedState extends State<KycStatusVerified> {
             decoration: BoxDecoration(
               gradient: LinearGradient(
                 colors: [
-                  Color(0xff233EC2),
-                  Color(0xff051F9B)
+                  AppColor.blueContColor3EC2,
+                  AppColor.blueContColor1F9B,
                 ],
               ),
-              color: AppColor.blueContColor1F9B,
               borderRadius:
               BorderRadius.circular(20 * SizeConfig.widthMultiplier!),
-              border: Border.all(
-                color: AppColor.blueContColor3EC2,
-              ),
             ),
-            child: Row(
-              children: [
-                Container(
-                  child: Column(
+            child: Padding(
+              padding:  EdgeInsets.only(
+                top: 24 * SizeConfig.widthMultiplier!,
+                left: 24 * SizeConfig.widthMultiplier!,
+              ),
+              child: Row(
+                children: [
+                  Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Row(
                         children: [
-                          ImageLoader.imageAsset(imagePath: ImagePath.usersIcon)
+                          ImageLoader.svgImageAsset(imagePath: ImagePath.usersIcon),
+                          SizedBox(
+                            width: 9 * SizeConfig.widthMultiplier!,
+                          ),
+                          Text("M. Faizan",
+                          style: AppTextStyle.text16BWhiteF9FFFFCW400,
+                          ),
                         ],
-                      )
+                      ),
+                      SizedBox(
+                        height: 20 * SizeConfig.heightMultiplier!,
+                      ),
+                      Row(
+                        children: [
+                          ImageLoader.svgImageAsset(imagePath: ImagePath.calenderIcon),
+                          SizedBox(
+                            width: 9 * SizeConfig.widthMultiplier!,
+                          ),
+                          Text("2022/06/10",
+                            style: AppTextStyle.text16BWhiteF9FFFFCW400,
+                          ),
+                        ],
+                      ),
+                      SizedBox(
+                        height: 20 * SizeConfig.heightMultiplier!,
+                      ),
+                      Row(
+                        children: [
+                          ImageLoader.svgImageAsset(imagePath: ImagePath.locationIcon),
+                          SizedBox(
+                            width: 9 * SizeConfig.widthMultiplier!,
+                          ),
+                          Text("2210 E Hangman Valley Rd",
+                            style: AppTextStyle.text16BWhiteF9FFFFCW400,
+                          ),
+                        ],
+                      ),
                     ],
                   ),
-                ),
-                Container(
-                  child: Column(
-                    children: [
-
-                    ],
+                  Spacer(),
+                  ImageLoader.imageAsset(
+                    imagePath: ImagePath.truesIcon,
                   ),
-                )
-              ],
+                ],
+              ),
             ),
           ),
         ],
