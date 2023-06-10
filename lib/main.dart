@@ -1,3 +1,5 @@
+import 'package:ahmad_practices/home_screen/face.dart';
+import 'package:ahmad_practices/home_screen/face_enable_screen.dart';
 import 'package:ahmad_practices/home_screen/kyc_status_verified.dart';
 import 'package:ahmad_practices/password_check.dart';
 import 'package:flutter/material.dart';
@@ -35,7 +37,7 @@ class MyApp extends StatelessWidget {
                     fontFamily: 'Avenir',
                     scaffoldBackgroundColor: Colors.white,
                   ),
-                  home: const KycStatusVerified(),
+                  home:  Face(),
                 );
               });
             });

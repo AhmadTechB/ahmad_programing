@@ -25,8 +25,6 @@ class _KycStatusVerifiedState extends State<KycStatusVerified> {
             height: 126 * SizeConfig.heightMultiplier!,
           ),
           Container(
-            width: 368* SizeConfig.widthMultiplier!,
-            height: 136* SizeConfig.heightMultiplier!,
             margin: EdgeInsets.only(
                 left: 16 * SizeConfig.widthMultiplier!,
                 right: 16 * SizeConfig.widthMultiplier!),
@@ -38,40 +36,26 @@ class _KycStatusVerifiedState extends State<KycStatusVerified> {
                 ],
               ),
               borderRadius:
-              BorderRadius.circular(20 * SizeConfig.widthMultiplier!),
+                  BorderRadius.circular(20 * SizeConfig.widthMultiplier!),
             ),
-            child: Padding(
-              padding:  EdgeInsets.only(
-                top: 24 * SizeConfig.widthMultiplier!,
-                left: 24 * SizeConfig.widthMultiplier!,
-              ),
-              child: Row(
-                children: [
-                  Column(
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Padding(
+                  padding: EdgeInsets.only(top: 24, left: 24, bottom: 28),
+                  child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Row(
                         children: [
-                          ImageLoader.svgImageAsset(imagePath: ImagePath.usersIcon),
+                          ImageLoader.svgImageAsset(
+                              imagePath: ImagePath.usersIcon),
                           SizedBox(
                             width: 9 * SizeConfig.widthMultiplier!,
                           ),
-                          Text("M. Faizan",
-                          style: AppTextStyle.text16BWhiteF9FFFFCW400,
-                          ),
-                        ],
-                      ),
-                      SizedBox(
-                        height: 20 * SizeConfig.heightMultiplier!,
-                      ),
-                      Row(
-                        children: [
-                          ImageLoader.svgImageAsset(imagePath: ImagePath.calenderIcon),
-                          SizedBox(
-                            width: 9 * SizeConfig.widthMultiplier!,
-                          ),
-                          Text("2022/06/10",
+                          Text(
+                            "M. Faizan",
                             style: AppTextStyle.text16BWhiteF9FFFFCW400,
                           ),
                         ],
@@ -81,23 +65,50 @@ class _KycStatusVerifiedState extends State<KycStatusVerified> {
                       ),
                       Row(
                         children: [
-                          ImageLoader.svgImageAsset(imagePath: ImagePath.locationIcon),
+                          ImageLoader.svgImageAsset(
+                              imagePath: ImagePath.calenderIcon),
                           SizedBox(
                             width: 9 * SizeConfig.widthMultiplier!,
                           ),
-                          Text("2210 E Hangman Valley Rd",
+                          Text(
+                            "2022/06/10",
+                            style: AppTextStyle.text16BWhiteF9FFFFCW400,
+                          ),
+                        ],
+                      ),
+                      SizedBox(
+                        height: 20 * SizeConfig.heightMultiplier!,
+                      ),
+                      Row(
+                        children: [
+                          ImageLoader.svgImageAsset(
+                              imagePath: ImagePath.locationIcon),
+                          SizedBox(
+                            width: 9 * SizeConfig.widthMultiplier!,
+                          ),
+                          Text(
+                            "2210 E Hangman Valley Rd",
                             style: AppTextStyle.text16BWhiteF9FFFFCW400,
                           ),
                         ],
                       ),
                     ],
                   ),
-                  Spacer(),
-                  ImageLoader.imageAsset(
-                    imagePath: ImagePath.truesIcon,
+                ),
+                Spacer(),
+                Padding(
+                  padding: EdgeInsets.only(
+                      top: 20 * SizeConfig.heightMultiplier!,
+                      right: 20 * SizeConfig.widthMultiplier!),
+                  child: Transform.scale(
+                    scale: 1.5,
+                    child: ImageLoader.imageAsset(
+                      height: 90 * SizeConfig.heightMultiplier!,
+                      imagePath: ImagePath.truesIcon,
+                    ),
                   ),
-                ],
-              ),
+                ),
+              ],
             ),
           ),
         ],

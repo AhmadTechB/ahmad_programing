@@ -19,4 +19,14 @@ class ImagePath{
   static const String calenderIcon = "assets/common/calender_icon.svg";
   static const String trueIcon = "assets/common/true_icon.svg";
   static const String truesIcon = "assets/common/trues_icon.png";
+  static const String faceEnableIcon = "assets/onboarding/enable_face_icon.svg";
+  static const String fingerEnableIcon = "assets/onboarding/enable_finger_icon.svg";
+
+
+  static const String arrowUpIcon = "assets/common/arrow_up_icon.svg";
+  static const String settingArrowDownIcon = "assets/common/arrow_down_icon.svg";
+  static const String accordionShield = "assets/common/shield_check_icon.svg";
+
+
+
 }
