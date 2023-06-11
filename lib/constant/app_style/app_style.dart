@@ -23,6 +23,12 @@ class AppTextStyle {
     fontSize: 16 * SizeConfig.textMultiplier!,
     // fontFamily: 'Circular',
   );
+  static TextStyle text17DarkBlue1237W400 = TextStyle(
+    color: AppColor.darkBlue1237,
+    fontWeight: FontWeight.w400,
+    fontSize: 17 * SizeConfig.textMultiplier!,
+    // fontFamily: 'Circular',
+  );
 
   static TextStyle text15Blue33DBW500 = TextStyle(
     color: AppColor.blue50DB,

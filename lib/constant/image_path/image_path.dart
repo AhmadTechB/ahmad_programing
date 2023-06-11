@@ -26,6 +26,8 @@ class ImagePath{
   static const String arrowUpIcon = "assets/common/arrow_up_icon.svg";
   static const String settingArrowDownIcon = "assets/common/arrow_down_icon.svg";
   static const String accordionShield = "assets/common/shield_check_icon.svg";
+  static const String toggleIcon = "assets/common/togle_icon.svg";
+  static const String lockIcon = "assets/common/lock_icon.svg";
 
 
 

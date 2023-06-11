@@ -42,7 +42,10 @@ class _KycStatusVerifiedState extends State<KycStatusVerified> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Padding(
-                  padding: EdgeInsets.only(top: 24, left: 24, bottom: 28),
+                  padding: EdgeInsets.only(
+                      top: 24 * SizeConfig.heightMultiplier!,
+                      left: 24 * SizeConfig.widthMultiplier!,
+                    bottom: 28 * SizeConfig.heightMultiplier!,),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
