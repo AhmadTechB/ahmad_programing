@@ -56,7 +56,7 @@ class CommonButton extends StatelessWidget {
   bool isLoading;
 
   /// this variable take true or false
-  /// to enable and desable button
+  /// to enable and disable button
   bool buttonIsEnabled;
 
   /// this is used to give loading button color on time of loading

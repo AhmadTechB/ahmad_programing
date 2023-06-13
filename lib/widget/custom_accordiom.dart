@@ -15,7 +15,7 @@ class CustomAccordion extends StatelessWidget {
         this.title,
         this.onTap,
         this.wantExtractRow = false,
-        required this.child,
+         this.child,
         required this.imagePath,
         this.subTitleChild})
       : super(key: key);
@@ -27,7 +27,7 @@ class CustomAccordion extends StatelessWidget {
   VoidCallback? onTap;
 
   bool wantExtractRow;
-  Widget child;
+  Widget? child;
 
   @override
   Widget build(BuildContext context) {
@@ -78,7 +78,11 @@ class CustomAccordion extends StatelessWidget {
         CustomSizedBox(
           height: 25,
         ),
-        wantExtractRow ? child : Container(),
+        wantExtractRow ? child ?? Container() : Container(),
+
+
+
+
         if (wantExtractRow == true)
           CustomSizedBox(
             height: 26,
