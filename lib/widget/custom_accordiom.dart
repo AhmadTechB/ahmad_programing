@@ -1,6 +1,5 @@
 // ignore_for_file: must_be_immutable
 
-
 import 'package:ahmad_practices/constant/app_color/app_color.dart';
 import 'package:ahmad_practices/constant/image_path/image_path.dart';
 import 'package:ahmad_practices/image_loader/image_loader.dart';
@@ -12,12 +11,12 @@ import 'package:flutter_svg/flutter_svg.dart';
 class CustomAccordion extends StatelessWidget {
   CustomAccordion(
       {Key? key,
-        this.title,
-        this.onTap,
-        this.wantExtractRow = false,
-         this.child,
-        required this.imagePath,
-        this.subTitleChild})
+      this.title,
+      this.onTap,
+      this.wantExtractRow = false,
+      this.child,
+      required this.imagePath,
+      this.subTitleChild})
       : super(key: key);
 
   String? title;
@@ -79,10 +78,6 @@ class CustomAccordion extends StatelessWidget {
           height: 25,
         ),
         wantExtractRow ? child ?? Container() : Container(),
-
-
-
-
         if (wantExtractRow == true)
           CustomSizedBox(
             height: 26,

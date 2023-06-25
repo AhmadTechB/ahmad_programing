@@ -1,12 +1,13 @@
 import 'package:ahmad_practices/buttons/blue_button.dart';
 import 'package:ahmad_practices/buttons/common_outline_button.dart';
 import 'package:ahmad_practices/constant/app_style/app_style.dart';
+import 'package:ahmad_practices/home_screen/bottomsheet.dart';
 import 'package:ahmad_practices/image_loader/image_loader.dart';
 import 'package:ahmad_practices/widget/size_config.dart';
 import 'package:flutter/material.dart';
 
-class EnableFaceId extends StatelessWidget {
-  EnableFaceId({Key? key, this.imagePath}) : super(key: key);
+class EnableFaceTouchId extends StatelessWidget {
+  EnableFaceTouchId({Key? key, this.imagePath}) : super(key: key);
 
   String? imagePath;
 
@@ -70,6 +71,15 @@ class EnableFaceId extends StatelessWidget {
               style: AppTextStyle.text15LiteGrey8096W400,
               textAlign: TextAlign.center,
             ),
+          ),
+          SizedBox(height: 12 * SizeConfig.heightMultiplier!),
+          CommonButton(
+            onTap: (){
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const BottomSheetPage()),
+                );
+            },
           ),
         ],
       ),

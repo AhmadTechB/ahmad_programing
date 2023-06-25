@@ -9,6 +9,8 @@ import 'package:ahmad_practices/widget/size_config.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import 'face_enable_screen.dart';
+
 class Face extends StatefulWidget {
   const Face({Key? key}) : super(key: key);
 
@@ -25,74 +27,77 @@ class _FaceState extends State<Face> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          // Security Settings
-          CustomAccordion(
-            wantExtractRow: clickedSecurityAccordion,
-            title: "Security Settings",
-            subTitleChild: Text(
-              "mailto:saddam_002@mailinator.com",
-              style: AppTextStyle.text16LiteGrey8096W400,
-            ),
-            onTap: () {
-              setState(() {
-                clickedSecurityAccordion = !clickedSecurityAccordion;
-              });
-            },
-            imagePath: ImagePath.accordionShield,
-            child: Column(
-              children: [
-                Padding(
-                  padding: EdgeInsets.only(
-                    left: 16 * SizeConfig.widthMultiplier!,
-                    right: 16 * SizeConfig.widthMultiplier!,
-                  ),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        "Login usign biometric",
-                        style: AppTextStyle.text17DarkBlue1237W400,
-                      ),
-                      Spacer(),
-                      GestureDetector(
-                        onTap: () {
-                          setState(() {
-                            swtich = !swtich;
-                          });
-                        },
-                        child: CupertinoSwitch(
-                            value: swtich,
-                            onChanged: (v) {
-                              setState(() {});
-                              swtich = v;
-                            }),
-                      ),
-                      ImageLoader.svgImageAsset(
-                          imagePath: ImagePath.toggleIcon),
-                    ],
-                  ),
-                ),
-                CustomSizedBox(
-                  height: 24,
-                ),
-                Text("ddd"),
-                CommonButton(
-                  buttonColor: AppColor.redF4534A,
-                  title: "Delete My Account",
-                ),
-              ],
-            ),
-          ),
-          CustomSizedBox(
-            height: 24,
-          ),
-        ],
-      ),
+    return EnableFaceTouchId(
+      imagePath: ImagePath.fingerEnableIcon,
     );
+
+    // return Scaffold(
+    //   body: Column(
+    //     mainAxisAlignment: MainAxisAlignment.center,
+    //     children: [
+    //       // Security Settings
+    //       CustomAccordion(
+    //         wantExtractRow: clickedSecurityAccordion,
+    //         title: "Security Settings",
+    //         subTitleChild: Text(
+    //           "mailto:saddam_002@mailinator.com",
+    //           style: AppTextStyle.text16LiteGrey8096W400,
+    //         ),
+    //         onTap: () {
+    //           setState(() {
+    //             clickedSecurityAccordion = !clickedSecurityAccordion;
+    //           });
+    //         },
+    //         imagePath: ImagePath.accordionShield,
+    //         child: Column(
+    //           children: [
+    //             Padding(
+    //               padding: EdgeInsets.only(
+    //                 left: 16 * SizeConfig.widthMultiplier!,
+    //                 right: 16 * SizeConfig.widthMultiplier!,
+    //               ),
+    //               child: Row(
+    //                 mainAxisAlignment: MainAxisAlignment.start,
+    //                 crossAxisAlignment: CrossAxisAlignment.start,
+    //                 children: [
+    //                   Text(
+    //                     "Login usign biometric",
+    //                     style: AppTextStyle.text17DarkBlue1237W400,
+    //                   ),
+    //                   Spacer(),
+    //                   GestureDetector(
+    //                     onTap: () {
+    //                       setState(() {
+    //                         swtich = !swtich;
+    //                       });
+    //                     },
+    //                     child: CupertinoSwitch(
+    //                         value: swtich,
+    //                         onChanged: (v) {
+    //                           setState(() {});
+    //                           swtich = v;
+    //                         }),
+    //                   ),
+    //                 ],
+    //               ),
+    //             ),
+    //
+    //             CustomSizedBox(
+    //               height: 24,
+    //             ),
+    //             Text("ddd"),
+    //             CommonButton(
+    //               buttonColor: AppColor.redF4534A,
+    //               title: "Delete My Account",
+    //             ),
+    //           ],
+    //         ),
+    //       ),
+    //       CustomSizedBox(
+    //         height: 24,
+    //       ),
+    //     ],
+    //   ),
+    // );
   }
 }
