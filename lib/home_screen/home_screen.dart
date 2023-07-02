@@ -92,7 +92,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
             SizedBox(
-              height: 11 * SizeConfig.widthMultiplier!,
+              height: 11 * SizeConfig.heightMultiplier!,
             ),
             Container(
               margin: EdgeInsets.only(
@@ -479,7 +479,6 @@ class _HomeScreenState extends State<HomeScreen> {
                 ],
               ),
             ),
-
           ],
         ),
       ),

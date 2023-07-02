@@ -33,13 +33,14 @@ class _BottomSheetPageState extends State<BottomSheetPage> {
                   showModalBottomSheet(
                     context: context,
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(20 * SizeConfig.widthMultiplier!),
+                      borderRadius: BorderRadius.circular(
+                          20 * SizeConfig.widthMultiplier!),
                     ),
                     builder: (context) {
                       return Container(
                         width: 360 * SizeConfig.widthMultiplier!,
                         height: 430 * SizeConfig.heightMultiplier!,
-                        child: Wrap(
+                        child: const Wrap(
                           children: [
                             ListTile(
                               leading: Icon(Icons.share),

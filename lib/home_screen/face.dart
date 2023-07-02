@@ -31,73 +31,73 @@ class _FaceState extends State<Face> {
       imagePath: ImagePath.fingerEnableIcon,
     );
 
-    // return Scaffold(
-    //   body: Column(
-    //     mainAxisAlignment: MainAxisAlignment.center,
-    //     children: [
-    //       // Security Settings
-    //       CustomAccordion(
-    //         wantExtractRow: clickedSecurityAccordion,
-    //         title: "Security Settings",
-    //         subTitleChild: Text(
-    //           "mailto:saddam_002@mailinator.com",
-    //           style: AppTextStyle.text16LiteGrey8096W400,
-    //         ),
-    //         onTap: () {
-    //           setState(() {
-    //             clickedSecurityAccordion = !clickedSecurityAccordion;
-    //           });
-    //         },
-    //         imagePath: ImagePath.accordionShield,
-    //         child: Column(
-    //           children: [
-    //             Padding(
-    //               padding: EdgeInsets.only(
-    //                 left: 16 * SizeConfig.widthMultiplier!,
-    //                 right: 16 * SizeConfig.widthMultiplier!,
-    //               ),
-    //               child: Row(
-    //                 mainAxisAlignment: MainAxisAlignment.start,
-    //                 crossAxisAlignment: CrossAxisAlignment.start,
-    //                 children: [
-    //                   Text(
-    //                     "Login usign biometric",
-    //                     style: AppTextStyle.text17DarkBlue1237W400,
-    //                   ),
-    //                   Spacer(),
-    //                   GestureDetector(
-    //                     onTap: () {
-    //                       setState(() {
-    //                         swtich = !swtich;
-    //                       });
-    //                     },
-    //                     child: CupertinoSwitch(
-    //                         value: swtich,
-    //                         onChanged: (v) {
-    //                           setState(() {});
-    //                           swtich = v;
-    //                         }),
-    //                   ),
-    //                 ],
-    //               ),
-    //             ),
-    //
-    //             CustomSizedBox(
-    //               height: 24,
-    //             ),
-    //             Text("ddd"),
-    //             CommonButton(
-    //               buttonColor: AppColor.redF4534A,
-    //               title: "Delete My Account",
-    //             ),
-    //           ],
-    //         ),
-    //       ),
-    //       CustomSizedBox(
-    //         height: 24,
-    //       ),
-    //     ],
-    //   ),
-    // );
+    return Scaffold(
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          // Security Settings
+          CustomAccordion(
+            wantExtractRow: clickedSecurityAccordion,
+            title: "Security Settings",
+            subTitleChild: Text(
+              "mailto:saddam_002@mailinator.com",
+              style: AppTextStyle.text16LiteGrey8096W400,
+            ),
+            onTap: () {
+              setState(() {
+                clickedSecurityAccordion = !clickedSecurityAccordion;
+              });
+            },
+            imagePath: ImagePath.accordionShield,
+            child: Column(
+              children: [
+                Padding(
+                  padding: EdgeInsets.only(
+                    left: 16 * SizeConfig.widthMultiplier!,
+                    right: 16 * SizeConfig.widthMultiplier!,
+                  ),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        "Login usign biometric",
+                        style: AppTextStyle.text17DarkBlue1237W400,
+                      ),
+                      Spacer(),
+                      GestureDetector(
+                        onTap: () {
+                          setState(() {
+                            swtich = !swtich;
+                          });
+                        },
+                        child: CupertinoSwitch(
+                            value: swtich,
+                            onChanged: (v) {
+                              setState(() {});
+                              swtich = v;
+                            }),
+                      ),
+                    ],
+                  ),
+                ),
+
+                CustomSizedBox(
+                  height: 24,
+                ),
+                Text("ddd"),
+                CommonButton(
+                  buttonColor: AppColor.redF4534A,
+                  title: "Delete My Account",
+                ),
+              ],
+            ),
+          ),
+          CustomSizedBox(
+            height: 24,
+          ),
+        ],
+      ),
+    );
   }
 }

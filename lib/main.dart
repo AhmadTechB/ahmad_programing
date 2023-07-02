@@ -1,3 +1,6 @@
+import 'package:ahmad_practices/cashaa_and_wallet/cashaa_exchange_screens/exchange_screen.dart';
+import 'package:ahmad_practices/cashaa_and_wallet/cashaa_wallet.dart';
+import 'package:ahmad_practices/forget_password_ui.dart';
 import 'package:ahmad_practices/home_screen/face.dart';
 import 'package:ahmad_practices/home_screen/face_enable_screen.dart';
 import 'package:ahmad_practices/home_screen/kyc_status_verified.dart';
@@ -37,7 +40,7 @@ class MyApp extends StatelessWidget {
                     fontFamily: 'Avenir',
                     scaffoldBackgroundColor: Colors.white,
                   ),
-                  home:  Face(),
+                  home:  ExchangeScreen(),
                 );
               });
             });

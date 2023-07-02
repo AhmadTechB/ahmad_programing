@@ -37,4 +37,13 @@ class ImagePath {
   static const String lockIcon = "assets/common/lock_icon.svg";
   static const String scannerIcon = "assets/common/scanner_icon.svg";
   static const String fingerIcon = "assets/common/fingerprint_icon.svg";
+  static const String walletIcon = "assets/common/wallet_icon.svg";
+  static const String backIcon= "assets/common/back_icon.svg";
+  static const String cashIcon= "assets/common/cashaa_bar_icon.svg";
+  static const String arrowDownIcon= "assets/common/arrow_down_icon.svg";
+  static const String zigzagIcon= "assets/common/zig_zag_icon.svg";
+  static const String greyZigzagIcon= "assets/onboarding/grey_zigzag_icon.svg";
+  static const String locIcon= "assets/common/loc_icon.svg";
+  static const String cashaaLogoIcon= "assets/onboarding/cashaa_logo_icon.svg";
+  static const String fiatCurrencyIcon= "assets/onboarding/fat_currency_icon.svg";
 }

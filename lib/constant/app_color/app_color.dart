@@ -39,6 +39,7 @@ class AppColor {
   static const Color blueC2CBF4 = Color(0xffC2CBF4);
 
   static const Color greyE2E8 = Color(0xffE2E8F0);
+  static const Color greyD5E0 = Color(0xffECBD5E0);
   static const Color greyA0AE = Color(0xffA0AEC0);
 
   //onBoarding Login screen
