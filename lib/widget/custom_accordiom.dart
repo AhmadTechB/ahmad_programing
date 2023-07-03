@@ -40,12 +40,12 @@ class CustomAccordion extends StatelessWidget {
               Container(
                 padding: EdgeInsets.all(12 * SizeConfig.widthMultiplier!),
                 decoration: const BoxDecoration(
-                    shape: BoxShape.circle, color: AppColor.whiteF7F8FD),
+                    shape: BoxShape.circle, color: AppColors.whiteF7F8FD),
                 child: ImageLoader.svgImageAsset(
                     imagePath: imagePath,
                     color: wantExtractRow == true
-                        ? AppColor.blue3350DB
-                        : AppColor.darkBlue1237),
+                        ? AppColors.blue3350DB
+                        : AppColors.darkBlue1237),
               ),
               CustomSizedBox(
                 width: 8,
@@ -57,8 +57,8 @@ class CustomAccordion extends StatelessWidget {
                     title ?? "",
                     style: TextStyle(
                         color: wantExtractRow == true
-                            ? AppColor.blue3350DB
-                            : AppColor.darkBlue1237,
+                            ? AppColors.blue3350DB
+                            : AppColors.darkBlue1237,
                         fontWeight: FontWeight.w700,
                         fontSize: 14 * SizeConfig.textMultiplier!),
                   ),

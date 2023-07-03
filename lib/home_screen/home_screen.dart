@@ -23,7 +23,7 @@ class _HomeScreenState extends State<HomeScreen> {
         backgroundColor: Colors.transparent,
       ),
       body: SingleChildScrollView(
-        child: Column(
+                child: Column(
           children: [
             SizedBox(
               height: 26 * SizeConfig.heightMultiplier!,
@@ -33,11 +33,11 @@ class _HomeScreenState extends State<HomeScreen> {
                   left: 16 * SizeConfig.widthMultiplier!,
                   right: 16 * SizeConfig.widthMultiplier!),
               decoration: BoxDecoration(
-                color: AppColor.greyBackFAFB,
+                color: AppColors.greyBackFAFB,
                 borderRadius:
                     BorderRadius.circular(5 * SizeConfig.widthMultiplier!),
                 border: Border.all(
-                  color: AppColor.greyBackFAFB,
+                  color: AppColors.greyBackFAFB,
                 ),
               ),
               child: Row(
@@ -99,11 +99,11 @@ class _HomeScreenState extends State<HomeScreen> {
                   left: 16 * SizeConfig.widthMultiplier!,
                   right: 16 * SizeConfig.widthMultiplier!),
               decoration: BoxDecoration(
-                color: AppColor.whiteBackFFFF,
+                color: AppColors.whiteBackFFFF,
                 borderRadius:
                     BorderRadius.circular(5 * SizeConfig.widthMultiplier!),
                 border: Border.all(
-                  color: AppColor.whiteBackE8F0,
+                  color: AppColors.whiteBackE8F0,
                 ),
               ),
               child: Padding(
@@ -143,11 +143,11 @@ class _HomeScreenState extends State<HomeScreen> {
                         left: 16 * SizeConfig.widthMultiplier!,
                         right: 16 * SizeConfig.widthMultiplier!),
                     decoration: BoxDecoration(
-                      color: AppColor.greyBackF2F6,
+                      color: AppColors.greyBackF2F6,
                       borderRadius:
                           BorderRadius.circular(5 * SizeConfig.widthMultiplier!),
                       border: Border.all(
-                        color: AppColor.greyBackF2F6,
+                        color: AppColors.greyBackF2F6,
                       ),
                     ),
                     child: Row(
@@ -200,11 +200,11 @@ class _HomeScreenState extends State<HomeScreen> {
                         left: 16 * SizeConfig.widthMultiplier!,
                         right: 16 * SizeConfig.widthMultiplier!),
                     decoration: BoxDecoration(
-                      color: AppColor.greyBackF2F6,
+                      color: AppColors.greyBackF2F6,
                       borderRadius:
                           BorderRadius.circular(5 * SizeConfig.widthMultiplier!),
                       border: Border.all(
-                        color: AppColor.greyBackF2F6,
+                        color: AppColors.greyBackF2F6,
                       ),
                     ),
                     child: Row(
@@ -257,11 +257,11 @@ class _HomeScreenState extends State<HomeScreen> {
                         left: 16 * SizeConfig.widthMultiplier!,
                         right: 16 * SizeConfig.widthMultiplier!),
                     decoration: BoxDecoration(
-                      color: AppColor.greyBackF2F6,
+                      color: AppColors.greyBackF2F6,
                       borderRadius:
                           BorderRadius.circular(5 * SizeConfig.widthMultiplier!),
                       border: Border.all(
-                        color: AppColor.greyBackF2F6,
+                        color: AppColors.greyBackF2F6,
                       ),
                     ),
                     child: Row(
@@ -314,11 +314,11 @@ class _HomeScreenState extends State<HomeScreen> {
                         left: 16 * SizeConfig.widthMultiplier!,
                         right: 16 * SizeConfig.widthMultiplier!),
                     decoration: BoxDecoration(
-                      color: AppColor.greyBackF2F6,
+                      color: AppColors.greyBackF2F6,
                       borderRadius:
                           BorderRadius.circular(5 * SizeConfig.widthMultiplier!),
                       border: Border.all(
-                        color: AppColor.greyBackF2F6,
+                        color: AppColors.greyBackF2F6,
                       ),
                     ),
                     child: Row(
@@ -370,11 +370,11 @@ class _HomeScreenState extends State<HomeScreen> {
                         left: 16 * SizeConfig.widthMultiplier!,
                         right: 16 * SizeConfig.widthMultiplier!),
                     decoration: BoxDecoration(
-                      color: AppColor.greyBackF2F6,
+                      color: AppColors.greyBackF2F6,
                       borderRadius:
                           BorderRadius.circular(5 * SizeConfig.widthMultiplier!),
                       border: Border.all(
-                        color: AppColor.greyBackF2F6,
+                        color: AppColors.greyBackF2F6,
                       ),
                     ),
                     child: Row(
@@ -479,6 +479,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ],
               ),
             ),
+
           ],
         ),
       ),

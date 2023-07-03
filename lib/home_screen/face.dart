@@ -87,7 +87,7 @@ class _FaceState extends State<Face> {
                 ),
                 Text("ddd"),
                 CommonButton(
-                  buttonColor: AppColor.redF4534A,
+                  buttonColor: AppColors.redF4534A,
                   title: "Delete My Account",
                 ),
               ],

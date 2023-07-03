@@ -74,7 +74,7 @@ class CommonOutlineButton extends StatelessWidget {
           borderRadius: BorderRadius.circular(
               borderRadius ?? 5 * SizeConfig.widthMultiplier!),
           color: buttonColor ?? Colors.transparent,
-          border: Border.all(color: borderColor ?? AppColor.blue50DB, width: 0.95),
+          border: Border.all(color: borderColor ?? AppColors.blue50DB, width: 0.95),
         ),
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.center,

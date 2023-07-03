@@ -98,10 +98,10 @@ class CommonButton extends StatelessWidget {
           borderRadius: BorderRadius.circular(
               borderRadius ?? 5 * SizeConfig.widthMultiplier!),
           color: (buttonIsEnabled == false)
-              ? AppColor.blue50DB
+              ? AppColors.blue50DB
               : (loadingButtonColor != null && isLoading == true
               ? loadingButtonColor
-              : (buttonColor ?? AppColor.blue50DB)),
+              : (buttonColor ?? AppColors.blue50DB)),
         ),
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.center,
@@ -110,7 +110,7 @@ class CommonButton extends StatelessWidget {
             if (isLoading == false && buttonIsEnabled == false)
               ImageLoader.svgImageAsset(
                 imagePath: ImagePath.arrowDownLeftIcon,
-                 color: AppColor.grey8096,
+                 color: AppColors.grey8096,
               ),
             if (buttonIsEnabled == true && isLoading == false)
               ImageLoader.svgImageAsset(

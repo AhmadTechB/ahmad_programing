@@ -31,8 +31,8 @@ class _KycStatusVerifiedState extends State<KycStatusVerified> {
             decoration: BoxDecoration(
               gradient: LinearGradient(
                 colors: [
-                  AppColor.blueContColor3EC2,
-                  AppColor.blueContColor1F9B,
+                  AppColors.blueContColor3EC2,
+                  AppColors.blueContColor1F9B,
                 ],
               ),
               borderRadius:

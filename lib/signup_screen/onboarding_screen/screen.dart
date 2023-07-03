@@ -52,7 +52,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
               "Please choose account type",
               textAlign: TextAlign.center,
               style: TextStyle(
-                color: AppColor.darkBlue1237,
+                color: AppColors.darkBlue1237,
                 fontSize: 34,
                 fontWeight: FontWeight.w700,
               ),
@@ -71,7 +71,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 borderRadius: BorderRadius.circular(20),
                 border: Border.all(
                   width: 2,
-                  color: AppColor.blue50DB,
+                  color: AppColors.blue50DB,
                 ),
               ),
               child: Row(
@@ -93,7 +93,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                         child: Text(
                           "For Personal",
                           style: TextStyle(
-                            color: AppColor.grey8096,
+                            color: AppColors.grey8096,
                             fontSize: 22,
                             fontWeight: FontWeight.w700,
                           ),
@@ -107,7 +107,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                         child: Text(
                           "Simple and fast way to use with\nselected features for personal use",
                           style: TextStyle(
-                            color: AppColor.grey8096,
+                            color: AppColors.grey8096,
                             fontSize: 14,
                             fontWeight: FontWeight.w400,
                           ),
@@ -143,7 +143,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 borderRadius: BorderRadius.circular(20),
                 border: Border.all(
                   width: 2,
-                  color: AppColor.blue50DB,
+                  color: AppColors.blue50DB,
                 ),
               ),
               child: Row(
@@ -165,7 +165,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                         child: Text(
                           "For Business",
                           style: TextStyle(
-                            color: AppColor.blue50DB,
+                            color: AppColors.blue50DB,
                             fontSize: 22,
                             fontWeight: FontWeight.w700,
                           ),
@@ -179,7 +179,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                         child: Text(
                           "Take in-deep features and hold non\nall controls with Business use",
                           style: TextStyle(
-                            color: AppColor.darkBlue1237,
+                            color: AppColors.darkBlue1237,
                             fontSize: 14,
                             fontWeight: FontWeight.w400,
                           ),
