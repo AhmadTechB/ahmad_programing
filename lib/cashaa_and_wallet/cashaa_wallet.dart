@@ -23,30 +23,6 @@ class _CashAndWalletState extends State<CashAndWallet> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           SizedBox(
-            height: 20 * SizeConfig.heightMultiplier!,
-          ),
-          Row(
-            children: [
-              Padding(
-                padding:
-                    EdgeInsets.only(left: 16 * SizeConfig.widthMultiplier!),
-                child: ImageLoader.svgImageAsset(imagePath: ImagePath.backIcon),
-              ),
-              SizedBox(
-                width: 59 * SizeConfig.widthMultiplier!,
-              ),
-              ImageLoader.svgImageAsset(imagePath: ImagePath.cashIcon),
-              SizedBox(
-                width: 5 * SizeConfig.widthMultiplier!,
-              ),
-              Text(
-                "Cashaa",
-                style: AppTextStyle.text22DarkBlue1237W400,
-              ),
-              ImageLoader.svgImageAsset(imagePath: ImagePath.arrowDownIcon),
-            ],
-          ),
-          SizedBox(
             height: 104 * SizeConfig.heightMultiplier!,
           ),
           Padding(

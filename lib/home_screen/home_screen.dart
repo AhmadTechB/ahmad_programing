@@ -1,7 +1,6 @@
 import 'package:ahmad_practices/buttons/blue_button.dart';
 import 'package:ahmad_practices/constant/app_style/app_style.dart';
 import 'package:ahmad_practices/constant/image_path/image_path.dart';
-import 'package:ahmad_practices/home_screen/face_enable_screen.dart';
 import 'package:ahmad_practices/image_loader/image_loader.dart';
 import 'package:ahmad_practices/widget/size_config.dart';
 import 'package:flutter/material.dart';
@@ -23,7 +22,7 @@ class _HomeScreenState extends State<HomeScreen> {
         backgroundColor: Colors.transparent,
       ),
       body: SingleChildScrollView(
-                child: Column(
+        child: Column(
           children: [
             SizedBox(
               height: 26 * SizeConfig.heightMultiplier!,
@@ -144,8 +143,8 @@ class _HomeScreenState extends State<HomeScreen> {
                         right: 16 * SizeConfig.widthMultiplier!),
                     decoration: BoxDecoration(
                       color: AppColors.greyBackF2F6,
-                      borderRadius:
-                          BorderRadius.circular(5 * SizeConfig.widthMultiplier!),
+                      borderRadius: BorderRadius.circular(
+                          5 * SizeConfig.widthMultiplier!),
                       border: Border.all(
                         color: AppColors.greyBackF2F6,
                       ),
@@ -154,8 +153,8 @@ class _HomeScreenState extends State<HomeScreen> {
                       children: [
                         Padding(
                           padding: EdgeInsets.only(
-                              top: 25 * SizeConfig.heightMultiplier!,
-                          left: 17 * SizeConfig.widthMultiplier!,
+                            top: 25 * SizeConfig.heightMultiplier!,
+                            left: 17 * SizeConfig.widthMultiplier!,
                           ),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
@@ -201,8 +200,8 @@ class _HomeScreenState extends State<HomeScreen> {
                         right: 16 * SizeConfig.widthMultiplier!),
                     decoration: BoxDecoration(
                       color: AppColors.greyBackF2F6,
-                      borderRadius:
-                          BorderRadius.circular(5 * SizeConfig.widthMultiplier!),
+                      borderRadius: BorderRadius.circular(
+                          5 * SizeConfig.widthMultiplier!),
                       border: Border.all(
                         color: AppColors.greyBackF2F6,
                       ),
@@ -211,8 +210,8 @@ class _HomeScreenState extends State<HomeScreen> {
                       children: [
                         Padding(
                           padding: EdgeInsets.only(
-                              top: 25 * SizeConfig.heightMultiplier!,
-                              left: 17 * SizeConfig.widthMultiplier!,
+                            top: 25 * SizeConfig.heightMultiplier!,
+                            left: 17 * SizeConfig.widthMultiplier!,
                           ),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
@@ -258,8 +257,8 @@ class _HomeScreenState extends State<HomeScreen> {
                         right: 16 * SizeConfig.widthMultiplier!),
                     decoration: BoxDecoration(
                       color: AppColors.greyBackF2F6,
-                      borderRadius:
-                          BorderRadius.circular(5 * SizeConfig.widthMultiplier!),
+                      borderRadius: BorderRadius.circular(
+                          5 * SizeConfig.widthMultiplier!),
                       border: Border.all(
                         color: AppColors.greyBackF2F6,
                       ),
@@ -268,8 +267,8 @@ class _HomeScreenState extends State<HomeScreen> {
                       children: [
                         Padding(
                           padding: EdgeInsets.only(
-                              top: 25 * SizeConfig.heightMultiplier!,
-                              left: 17 * SizeConfig.widthMultiplier!,
+                            top: 25 * SizeConfig.heightMultiplier!,
+                            left: 17 * SizeConfig.widthMultiplier!,
                           ),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
@@ -315,8 +314,8 @@ class _HomeScreenState extends State<HomeScreen> {
                         right: 16 * SizeConfig.widthMultiplier!),
                     decoration: BoxDecoration(
                       color: AppColors.greyBackF2F6,
-                      borderRadius:
-                          BorderRadius.circular(5 * SizeConfig.widthMultiplier!),
+                      borderRadius: BorderRadius.circular(
+                          5 * SizeConfig.widthMultiplier!),
                       border: Border.all(
                         color: AppColors.greyBackF2F6,
                       ),
@@ -371,8 +370,8 @@ class _HomeScreenState extends State<HomeScreen> {
                         right: 16 * SizeConfig.widthMultiplier!),
                     decoration: BoxDecoration(
                       color: AppColors.greyBackF2F6,
-                      borderRadius:
-                          BorderRadius.circular(5 * SizeConfig.widthMultiplier!),
+                      borderRadius: BorderRadius.circular(
+                          5 * SizeConfig.widthMultiplier!),
                       border: Border.all(
                         color: AppColors.greyBackF2F6,
                       ),
@@ -479,7 +478,6 @@ class _HomeScreenState extends State<HomeScreen> {
                 ],
               ),
             ),
-
           ],
         ),
       ),

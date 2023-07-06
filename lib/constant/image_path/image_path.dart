@@ -22,6 +22,7 @@ class ImagePath {
   static const String cashaaInsightIcon =
       "assets/onboarding/cashaa_insight_icon.png";
   static const String usersIcon = "assets/common/user_icon.svg";
+  static const String infoCircleIcon = "assets/common/info-circle.svg";
   static const String locationIcon = "assets/common/location_icon.svg";
   static const String calenderIcon = "assets/common/calender_icon.svg";
   static const String trueIcon = "assets/common/true_icon.svg";
@@ -46,4 +47,6 @@ class ImagePath {
   static const String locIcon= "assets/common/loc_icon.svg";
   static const String cashaaLogoIcon= "assets/onboarding/cashaa_logo_icon.svg";
   static const String fiatCurrencyIcon= "assets/onboarding/fat_currency_icon.svg";
+  static const String moreHorizontalIcon= "assets/common/more-horizontal.png";
+  static const String networkTypeIcon= "assets/common/network_type_icon.png";
 }
