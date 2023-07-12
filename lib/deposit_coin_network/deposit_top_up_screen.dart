@@ -8,14 +8,16 @@ import 'package:ahmad_practices/widget/custom_sized_box.dart';
 import 'package:ahmad_practices/widget/size_config.dart';
 import 'package:flutter/material.dart';
 
-class DepositAndBtcScreen extends StatefulWidget {
-  const DepositAndBtcScreen({Key? key}) : super(key: key);
+import '../cashaa_exchange_screens/exchange_screen.dart';
+
+class TopUpScreen extends StatefulWidget {
+  const TopUpScreen({Key? key}) : super(key: key);
 
   @override
-  State<DepositAndBtcScreen> createState() => _DepositAndBtcScreenState();
+  State<TopUpScreen> createState() => _TopUpScreenState();
 }
 
-class _DepositAndBtcScreenState extends State<DepositAndBtcScreen> {
+class _TopUpScreenState extends State<TopUpScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -59,9 +61,17 @@ class _DepositAndBtcScreenState extends State<DepositAndBtcScreen> {
                   CustomSizedBox(
                     width: 5,
                   ),
-                  Text(
-                    "History",
-                    style: AppTextStyle.text17LiteGrey8096W400,
+                  GestureDetector(
+                    onTap: (){
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => const ExchangeScreen()),
+                      );
+                    },
+                    child: Text(
+                      "History",
+                      style: AppTextStyle.text17LiteGrey8096W400,
+                    ),
                   ),
                 ],
               ),

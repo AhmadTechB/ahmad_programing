@@ -197,7 +197,7 @@ class _ExchangeScreenState extends State<ExchangeScreen> {
                   ),
                   SizedBox(
                       width: 44 * SizeConfig.widthMultiplier!,
-                      child: Divider()),
+                      child: const Divider()),
                 ],
               ),
             ),

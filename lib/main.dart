@@ -1,5 +1,4 @@
 import 'package:ahmad_practices/cashaa_and_wallet/cashaa_wallet.dart';
-import 'package:ahmad_practices/deposit_coin/deposit_top_up_screen.dart';
 import 'package:ahmad_practices/forget_password_ui.dart';
 import 'package:ahmad_practices/home_screen/face.dart';
 import 'package:ahmad_practices/home_screen/face_enable_screen.dart';
@@ -7,6 +6,7 @@ import 'package:ahmad_practices/home_screen/kyc_status_verified.dart';
 import 'package:ahmad_practices/password_check.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'deposit_coin_network/deposit_top_up_screen.dart';
 import 'home_screen/home_screen.dart';
 import 'widget/size_config.dart';
 
@@ -40,7 +40,7 @@ class MyApp extends StatelessWidget {
                     fontFamily: 'Avenir',
                     scaffoldBackgroundColor: Colors.white,
                   ),
-                  home:  DepositAndBtcScreen(),
+                  home:  TopUpScreen(),
                 );
               });
             });
