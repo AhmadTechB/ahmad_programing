@@ -2,8 +2,8 @@ import 'package:ahmad_practices/buttons/blue_button.dart';
 import 'package:ahmad_practices/constant/app_color/app_color.dart';
 import 'package:ahmad_practices/constant/app_style/app_style.dart';
 import 'package:ahmad_practices/constant/image_path/image_path.dart';
+import 'package:ahmad_practices/deposite_process/deposite_process_screen.dart';
 import 'package:ahmad_practices/image_loader/image_loader.dart';
-import 'package:ahmad_practices/widget/custom_textform_feild.dart';
 import 'package:ahmad_practices/widget/size_config.dart';
 import 'package:flutter/material.dart';
 
@@ -44,9 +44,17 @@ class _ExchangeScreenState extends State<ExchangeScreen> {
               padding: EdgeInsets.only(
                 left: 16 * SizeConfig.widthMultiplier!,
               ),
-              child: Text(
-                "You will exchange",
-                style: AppTextStyle.text18DarkBlue1237W700,
+              child: GestureDetector(
+                onTap: (){
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const DepositScreen()),
+                  );
+                },
+                child: Text(
+                  "You will exchange",
+                  style: AppTextStyle.text18DarkBlue1237W700,
+                ),
               ),
             ),
             SizedBox(
