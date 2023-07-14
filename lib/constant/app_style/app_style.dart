@@ -221,6 +221,19 @@ static TextStyle text13DarkBlue1237W400 = TextStyle(
     fontFamily: 'Circular',
   );
 
+static TextStyle text20blue0612W400 = TextStyle(
+  color: AppColors.darkBlue1237,
+  fontWeight: FontWeight.w400,
+  fontSize: 20 * SizeConfig.textMultiplier!,
+  fontFamily: 'Circular',
+);
+static TextStyle text18blue0612W400 = TextStyle(
+  color: AppColors.darkBlue1237,
+  fontWeight: FontWeight.w400,
+  fontSize: 18 * SizeConfig.textMultiplier!,
+  fontFamily: 'Circular',
+);
+
 
 // static TextStyle? text18blue1E4DW700 = TextStyle(
 //   color: AppColors.blue1E4D,
@@ -317,12 +330,7 @@ static TextStyle text13DarkBlue1237W400 = TextStyle(
 //   fontFamily: 'Circular',
 // );
 //
-// static TextStyle text20blue0612W400 = TextStyle(
-//   color: AppColors.darkBlue1237,
-//   fontWeight: FontWeight.w400,
-//   fontSize: 20 * SizeConfig.textMultiplier!,
-//   fontFamily: 'Circular',
-// );
+
 // static TextStyle text16Grey8096W400 = TextStyle(
 //   color: AppColors.grey718096,
 //   fontWeight: FontWeight.w400,

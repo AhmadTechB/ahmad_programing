@@ -49,4 +49,7 @@ class ImagePath {
   static const String fiatCurrencyIcon= "assets/onboarding/fat_currency_icon.svg";
   static const String moreHorizontalIcon= "assets/common/more-horizontal.png";
   static const String networkTypeIcon= "assets/common/network_type_icon.png";
+  static const String saSymbol= "assets/common/sa_symbol.png";
+  static const String sASymbol= "assets/common/sa_symbol.svg";
+  static const String gbgIcon= "assets/onboarding/gbp.png";
 }

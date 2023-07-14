@@ -12,6 +12,7 @@ class MarketCapRow extends StatelessWidget {
   String? prefixIcon;
   bool wantPrefixIcon;
   bool wantTextColor;
+  bool wantTitleTextColor;
 
   MarketCapRow({Key? key,
     this.title,
@@ -19,6 +20,7 @@ class MarketCapRow extends StatelessWidget {
     this.prefixIcon,
     this.wantPrefixIcon = false,
     this.wantTextColor = false,
+    this.wantTitleTextColor = false,
 
   }) : super(key: key);
 
@@ -35,7 +37,11 @@ class MarketCapRow extends StatelessWidget {
         children: [
           Text(
             title?? "",
-            style: AppTextStyle.text18LiteGrey8096W400,
+            style: AppTextStyle.text18blue0612W400
+            .copyWith(color: wantTitleTextColor ==
+                true
+                ? AppColors.grey8096
+                : AppColors.darkBlue1237,),
           ),
           const Spacer(),
           wantPrefixIcon == true ? ImageLoader.svgImageAsset(

@@ -5,6 +5,7 @@ import 'package:ahmad_practices/constant/image_path/image_path.dart';
 import 'package:ahmad_practices/image_loader/image_loader.dart';
 import 'package:ahmad_practices/widget/custom_sized_box.dart';
 import 'package:ahmad_practices/widget/market_row_cap/market_row_container.dart';
+import 'package:ahmad_practices/widget/market_row_cap/saddan_container_row.dart';
 import 'package:ahmad_practices/widget/size_config.dart';
 import 'package:flutter/material.dart';
 
@@ -35,16 +36,16 @@ class _DepositScreenState extends State<DepositScreen> {
                 imagePath: ImagePath.cashaaLogoIcon),
           ),
           CustomSizedBox(
-              height: 37
+              height: 26
           ),
              Center(
                child: Text(
-                "How much do you \nwant to deposit?",
+                "How much do you \n want to deposit?",
                 style: AppTextStyle.text18DarkBlue1237W700,
             ),
              ),
           CustomSizedBox(
-              height: 12
+              height: 55
           ),
           Container(
             margin: EdgeInsets.only(
@@ -53,6 +54,7 @@ class _DepositScreenState extends State<DepositScreen> {
             width: 328 * SizeConfig.widthMultiplier!,
             height: 78 * SizeConfig.heightMultiplier!,
             decoration: BoxDecoration(
+              color: AppColors.whiteF7F8FD,
               borderRadius:
               BorderRadius.circular(5 * SizeConfig.widthMultiplier!),
               border: Border.all(
@@ -94,17 +96,25 @@ class _DepositScreenState extends State<DepositScreen> {
             ),
           ),
           CustomSizedBox(
-              height: 17
+              height: 14
           ),
           MarketCapRow(
+            wantTitleTextColor: true,
             title: "Amount you will need to deposit",
             subTitle: "£0.00",
           ),
           CustomSizedBox(
-              height: 37
+              height: 298
           ),
-          CommonButton(
-            title: "Continue",
+          GestureDetector(
+            onTap: (){
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const SaddamContainer()),
+              );            },
+            child: CommonButton(
+              title: "Continue",
+            ),
           ),
         ],
       ),

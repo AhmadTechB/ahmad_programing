@@ -40,19 +40,26 @@ class ImageLoader {
     return Container();
   }
 
-  static Widget imageNetworkAsset({
-  String? imagepath,
-    double? width,
-    double? height,
-}) {
-    if(imagepath!= null){
-       return imageNetworkAsset(
-         imagepath: imagepath,
-         width: width,
-         height: height,
-       );
+  static Widget networkAssetImage(
+      {String? imagePath,
+        double? width,
+        double? height,
+        Color? color,
+        double? scale,
+        bool? wantsScale = false}) {
+    if (imagePath != null) {
+      return Transform.scale(
+        scale: wantsScale == true ? scale : 1,
+        child: Image.network(
+          imagePath,
+          width: width,
+          height: height,
+          color: color,
+        ),
+      );
     }
-return Container();
+
+    return Container();
   }
   // Lotte Asset
   static Widget assetLottie({
