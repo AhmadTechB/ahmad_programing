@@ -65,6 +65,8 @@ class CommonButton extends StatelessWidget {
   ///if want to disable tap when buttonIsEnabled == false make this true
   bool? disableTap;
 
+  
+
   CommonButton({
     Key? key,
     this.buttonIsEnabled = true,
