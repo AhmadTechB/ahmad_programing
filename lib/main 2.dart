@@ -4,14 +4,10 @@ import 'package:ahmad_practices/home_screen/face.dart';
 import 'package:ahmad_practices/home_screen/face_enable_screen.dart';
 import 'package:ahmad_practices/home_screen/kyc_status_verified.dart';
 import 'package:ahmad_practices/password_check.dart';
-import 'package:ahmad_practices/zomato_screen/chicken_mandi_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'deposit_coin_network/deposit_top_up_screen.dart';
 import 'home_screen/home_screen.dart';
-import 'language_change_screen/lang_change_screen.dart';
-import 'language_change_screen/local_string.dart';
 import 'widget/size_config.dart';
 
 void main() {
@@ -36,18 +32,15 @@ class MyApp extends StatelessWidget {
             return LayoutBuilder(builder: (context, constraints) {
               return OrientationBuilder(builder: (context, orientation) {
                 SizeConfig().init(constraints, orientation);
-                return GetMaterialApp(
+                return MaterialApp(
                   debugShowCheckedModeBanner: false,
                   title: 'SilkRoute',
-                  translations: LocaleString(),
-                  locale: const Locale('en' , 'US'),
-                  fallbackLocale: const Locale('hi' , 'IN'),
                   theme: ThemeData(
                     primarySwatch: Colors.blue,
                     fontFamily: 'Avenir',
                     scaffoldBackgroundColor: Colors.white,
                   ),
-                  home:  const ArabicChickenMandiScreen(),
+                  home:  HomeScreen(),
                 );
               });
             });

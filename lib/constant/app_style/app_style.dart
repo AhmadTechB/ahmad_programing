@@ -150,6 +150,12 @@ static TextStyle text20WhiteFFFW700 = TextStyle(
   fontSize: 20 * SizeConfig.textMultiplier!,
   fontFamily: 'Circular',
 );
+static TextStyle text14WhiteFFFW400 = TextStyle(
+  color: AppColors.kWhite,
+  fontWeight: FontWeight.w400,
+  fontSize: 14 * SizeConfig.textMultiplier!,
+  fontFamily: 'Circular',
+);
 
 static TextStyle text22DarkBlue1237W400 = TextStyle(
   color: AppColors.darkBlue1237,
@@ -231,6 +237,13 @@ static TextStyle text18blue0612W400 = TextStyle(
   color: AppColors.darkBlue1237,
   fontWeight: FontWeight.w400,
   fontSize: 18 * SizeConfig.textMultiplier!,
+  fontFamily: 'Circular',
+);
+
+static TextStyle text17Grey1717W400 = TextStyle(
+  color: AppColors.grey71,
+  fontWeight: FontWeight.w400,
+  fontSize: 17 * SizeConfig.textMultiplier!,
   fontFamily: 'Circular',
 );
 

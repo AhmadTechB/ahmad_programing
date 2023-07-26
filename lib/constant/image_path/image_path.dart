@@ -52,4 +52,10 @@ class ImagePath {
   static const String saSymbol= "assets/common/sa_symbol.png";
   static const String sASymbol= "assets/common/sa_symbol.svg";
   static const String gbgIcon= "assets/onboarding/gbp.png";
+  static const String deliveryGirlIcon= "assets/common/delivery_girl_icon.png";
+  static const String cartIcon= "assets/common/cart_icon.svg";
+  static const String menuDarkIcon= "assets/common/menu_dark_icon.png";
+  static const String searchIcon= "assets/common/search_icon.png";
+  static const String dishIcon= "assets/common/dish_icon.png";
+  static const String burgerIcon= "assets/common/burgur_img.png";
 }
