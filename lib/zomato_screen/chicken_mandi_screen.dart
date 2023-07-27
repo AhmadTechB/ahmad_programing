@@ -103,7 +103,7 @@ class _ArabicChickenMandiScreenState extends State<ArabicChickenMandiScreen> {
                         width: 12,
                       ),
                       ImageAndText(
-                          title: "Biryani", imagePath: ImagePath.cakeIcon),
+                          title: "Cake", imagePath: ImagePath.cakeIcon),
                       CustomSizedBox(
                         width: 12,
                       ),

@@ -47,7 +47,7 @@ class MyApp extends StatelessWidget {
                     fontFamily: 'Avenir',
                     scaffoldBackgroundColor: Colors.white,
                   ),
-                  home:  const ArabicChickenMandiScreen(),
+                  home:  const TopUpScreen(),
                 );
               });
             });
