@@ -239,6 +239,12 @@ static TextStyle text18blue0612W400 = TextStyle(
   fontSize: 18 * SizeConfig.textMultiplier!,
   fontFamily: 'Circular',
 );
+static TextStyle text16blue0612W400 = TextStyle(
+  color: AppColors.darkBlue1237,
+  fontWeight: FontWeight.w400,
+  fontSize: 16 * SizeConfig.textMultiplier!,
+  fontFamily: 'Circular',
+);
 
 static TextStyle text17Grey1717W400 = TextStyle(
   color: AppColors.grey71,

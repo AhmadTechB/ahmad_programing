@@ -58,4 +58,18 @@ class ImagePath {
   static const String searchIcon= "assets/common/search_icon.png";
   static const String dishIcon= "assets/common/dish_icon.png";
   static const String burgerIcon= "assets/common/burgur_img.png";
+  static const String biryaniIcon= "assets/common/biryani_icon.png";
+  static const String cakeIcon= "assets/common/cake_icon.png";
+  static const String dishFrishIcon= "assets/common/dish_frish_icon.png";
+  static const String dishMacIcon= "assets/common/dish_mac_icon.png";
+  static const String dishRoastIcon= "assets/common/dish_roast_icon.png";
+  static const String dishViraIcon= "assets/common/dish_vira_icon.png";
+  static const String parathasIcon= "assets/common/parathas_icon.png";
+  static const String thaliIcon= "assets/common/parathas_icon.png";
+  static const String rectangleIcon= "assets/common/Rectangle_icon.png";
+  static const String rectangle1Icon= "assets/common/Rectangle1_icon.png";
+  static const String rectangle2Icon= "assets/common/Rectangle2_icon.png";
+  static const String rectangle3Icon= "assets/common/Rectangle3_icon.png";
+  static const String rectangle4Icon= "assets/common/Rectangle4_icon.png";
+  static const String rectangle5Icon= "assets/common/Rectangle5_icon.png";
 }

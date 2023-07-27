@@ -21,16 +21,16 @@ class ImageAndText extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
           ClipRRect(
-            borderRadius: BorderRadius.circular(40),
+            borderRadius: BorderRadius.circular(45),
             child: ImageLoader.imageAsset(
-              width: 80,
+              width: 75,
               imagePath: imagePath ,
             ),
           ),
-          CustomSizedBox(height: 7,),
+          CustomSizedBox(height: 3,),
           Text(
               title?? "",
-              style: AppTextStyle.text18blue0612W400
+              style: AppTextStyle.text16blue0612W400
           )
         ],
       ),
