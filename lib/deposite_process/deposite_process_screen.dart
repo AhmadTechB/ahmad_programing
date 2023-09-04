@@ -111,7 +111,8 @@ class _DepositScreenState extends State<DepositScreen> {
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => const SaddamContainer()),
-              );            },
+              );
+              },
             child: CommonButton(
               title: "Continue",
             ),

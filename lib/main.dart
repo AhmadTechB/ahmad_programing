@@ -8,7 +8,9 @@ import 'package:ahmad_practices/zomato_screen/chicken_mandi_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
+import 'cashaa_exchange_screens/exchange_screen.dart';
 import 'deposit_coin_network/deposit_top_up_screen.dart';
+import 'home_screen/bottomsheet_navigation_bar_home.dart';
 import 'home_screen/home_screen.dart';
 import 'language_change_screen/lang_change_screen.dart';
 import 'language_change_screen/local_string.dart';
@@ -47,7 +49,7 @@ class MyApp extends StatelessWidget {
                     fontFamily: 'Avenir',
                     scaffoldBackgroundColor: Colors.white,
                   ),
-                  home:  const TopUpScreen(),
+                  home:  const NavigationBarBottomSheet(),
                 );
               });
             });

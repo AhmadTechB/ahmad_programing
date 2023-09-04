@@ -41,7 +41,7 @@ dependencies:
   loading_animation_widget: ^1.2.0+3
   lottie: ^2.3.2
   get: ^4.6.5
-
+  water_drop_nav_bar:
 
 dev_dependencies:
   flutter_test:
