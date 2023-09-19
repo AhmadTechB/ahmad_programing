@@ -14,6 +14,7 @@ import 'home_screen/bottomsheet_navigation_bar_home.dart';
 import 'home_screen/home_screen.dart';
 import 'language_change_screen/lang_change_screen.dart';
 import 'language_change_screen/local_string.dart';
+import 'setting_screen/setting_screen.dart';
 import 'widget/size_config.dart';
 
 void main() {
